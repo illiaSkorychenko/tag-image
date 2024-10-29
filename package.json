@@ -1,0 +1,25 @@
+{
+  "name": "tag-image",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc ./src/extract-tags/index.ts ./src/get-status-tags/index.ts ./src/get-upload-link/index.ts --outDir dist && ./scripts/zip.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/node": "^22.7.6",
+    "prettier": "3.3.3",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.674.0",
+    "@aws-sdk/client-rekognition": "^3.674.0",
+    "@aws-sdk/client-s3": "^3.674.0",
+    "@aws-sdk/s3-request-presigner": "^3.675.0",
+    "aws-lambda": "^1.0.7"
+  }
+}

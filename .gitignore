@@ -1,0 +1,17 @@
+/node_modules
+/dist
+
+*.png
+*.jpg
+*.jpeg
+
+# For Terraform
+# Local .terraform directories
+**/.terraform/*
+**/.terragrunt/*
+**/.terragrunt-cache*
+**/.terragrunt-cache/*
+# .tfstate files
+*.tfstate
+*.tfstate.*
+crash.log
